@@ -1,8 +1,10 @@
 @extends('layouts.auth')
 
+@section('title') Login @endsection
+
 @section('auth-content')
    <form action="" class="mt-14 space-y-5">
-      <div class="flex vlex-col gap-2">
+      <div class="flex flex-col gap-2">
          <label for="email" class="font-bold text-2xl">Email</label>
 
          <input
