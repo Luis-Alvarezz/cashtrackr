@@ -6,11 +6,11 @@ Route::get('/', function () { // * Méodo estático 'get' para definir una ruta 
     return view('welcome');
 });
 
-// ! Autenticación de usuarios:
+// ! Autenticación de usuarios, sintexis CLOUSURE:
 Route::get('/auth/register', function () {
    return view('auth.register');
-});
+})->name('register');
 
 Route::get('/auth/login', function () {
    return view('auth.login');
-});
+})->name('login');
